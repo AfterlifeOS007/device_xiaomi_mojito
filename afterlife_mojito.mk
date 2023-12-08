@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mojito device
 $(call inherit-product, device/xiaomi/mojito/device.mk)
 
-# Inherit some common BlissRoms stuff.
+# Inherit some common AfterLife stuff.
 $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Product Specifics
@@ -25,6 +25,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 # AFTERLIFE_GAPPS := true
 
 AFTERLIFE_MAINTAINER := psycogenesis
+AFTERLIFE_BUILD_TYPE := OFFICIAL
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
