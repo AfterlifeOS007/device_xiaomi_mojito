@@ -23,6 +23,8 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/mojito-miuicamera/products/miuicamera.mk)
 
@@ -233,6 +235,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
+
+# GalleryPhotoManager
+PRODUCT_PACKAGES += \
+    GalleryPhotoManager
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
