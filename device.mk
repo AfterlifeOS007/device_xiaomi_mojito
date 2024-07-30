@@ -238,10 +238,6 @@ PRODUCT_PACKAGES += \
     FM2 \
     qcom.fmradio
 
-# GalleryPhotoManager
-PRODUCT_PACKAGES += \
-    GalleryPhotoManager
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
